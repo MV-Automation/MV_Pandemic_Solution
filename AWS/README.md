@@ -13,6 +13,7 @@ secret_key = 123adsfsaXDAFFEF#r4...
 acces_key = 5423t432ewsACFASF$32rR#Cwcxasf12...
 
 ```
+3. Replace you Aws keys in the file AmazonKeys.py and save.
 
 ###### S3 Bucket
 
@@ -22,6 +23,9 @@ acces_key = 5423t432ewsACFASF$32rR#Cwcxasf12...
 Bucket Name : meraki-vision-bucket-for-clients
 ```
 > In our deployment we use this name but you should replace it with the name of the new bucket you will create.
+
+
+
 
 ###### Lambda 
 
@@ -33,8 +37,9 @@ Bucket Name : meraki-vision-bucket-for-clients
 Event type: ObjectCreated
 Suffix: .jpg
 ```
-   1. 
-   1. Item 3b
+5. Once you had created the trigger, move to function code tab.
+   - Click to action.
+   - Upload ZIP file.
 
 
 
