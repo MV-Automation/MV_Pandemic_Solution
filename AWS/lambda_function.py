@@ -98,7 +98,7 @@ def lambda_handler(event, context):
       response = "No faces"
 
     response_textract = client_textract.analyze_document(Document={'S3Object': {'Bucket': bucket, 'Name': targetFile}}, FeatureTypes=["TABLES", "FORMS"])
-    table=dynamodb.Table("Faces_Match")
+    table=dynamodb.Table("your_new_dynamodDB")
 
 
     now = datetime.now() # current date and time
