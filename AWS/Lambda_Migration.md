@@ -11,7 +11,7 @@ Lambda Service has a collection of native libraries to use with Python but in ou
  -AmazonKeys.py
  -lambda_function.py
  -upload_to_lambda/
-  -...
+    -...
 ```
 
 2. Inside AmazonKeys.py, replace to yours AWS Account keys and your Webex Teams Bot Token Key.
@@ -65,7 +65,7 @@ aws_secret = "ASDASJDNQWUW2738TWDUNJAKWDN2EWQ..."
 
 ###### Uploading Code (ZIP File)
 
-After doing upper steps, please move AmazonKeys.py and lambda_function.py to uploat_to_lamda folder. Then, create a ZIP file with all the folder.
+After doing upper steps, please move AmazonKeys.py and lambda_function.py to upload_to_lambda folder. Then, create a ZIP file with all the folder.
 
 ```
 upload_to_lambda/
