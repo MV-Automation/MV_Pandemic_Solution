@@ -1,7 +1,7 @@
-# AWS Architecture
+# AWS SetUp
 ## Description
 
-In this module we deploy the amazon web services [AWS](https://aws.amazon.com) architecture. This cloud services use machine learning to extract text and do facial recognition.
+In this module we deploy the Amazon Web Services [AWS](https://aws.amazon.com) architecture. This cloud services use machine learning to extract text and do facial recognition.
 
 ## Installation Steps
 
@@ -26,14 +26,13 @@ Bucket Name : meraki-vision-bucket-for-clients
 
 
 
-
 ###### Lambda 
 
 1. Inside aws console, open the service tab and open Lambda.
 2. Create a new lambda function from scratch with *Python 3.6* as Runtime.
 3. Modify lambda settings to the following:
-![Image of Yaktocat](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/AWS/img/lambda_setup.png)
+![Image of Setup](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/lambda_setup.png)
 
 4. In configuration tab, click on add trigger and select your S3 bucket created in *S3 Bucket* setup. 
 5. Setup the trigger as follows:
@@ -43,8 +42,13 @@ Suffix: .jpg
 ```
 6. Once you had created the trigger, move to function code tab.
    - Click to action.
-   - Upload ZIP file. (See Migration instructtion [Here](https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/AWS/Lambda_Migration.md))
+   - Upload ZIP file. (See Migration instruction [Here](https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/AWS/Lambda_Migration.md))
 
 
 
-## How to use
+## Architecture
+
+This module is executed by self when receives images from a Raspberry Pi Client and then generated a Webex Teams Bot. 
+
+![Image of Architecture](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/Cloud_Architecture.png)
