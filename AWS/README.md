@@ -13,7 +13,7 @@ secret_key = 123adsfsaXDAFFEF#r4...
 acces_key = 5423t432ewsACFASF$32rR#Cwcxasf12...
 
 ```
-3. Replace you Aws keys in the file AmazonKeys.py and save.
+3. Replace you AWS keys in the file AmazonKeys.py and save.
 
 ###### S3 Bucket
 
@@ -30,14 +30,18 @@ Bucket Name : meraki-vision-bucket-for-clients
 ###### Lambda 
 
 1. Inside aws console, open the service tab and open Lambda.
-2. Create a new lambda function. 
-3. In configuration tab, click on add trigger and select your S3 bucket created in *S3 Bucket* setup. 
-4. Setup the trigger as follows:
+2. Create a new lambda function from scratch with *Python 3.6* as Runtime.
+3. Modify lambda settings to the following:
+![Image of Yaktocat](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/AWS/img/lambda_setup.png)
+
+4. In configuration tab, click on add trigger and select your S3 bucket created in *S3 Bucket* setup. 
+5. Setup the trigger as follows:
 ```
 Event type: ObjectCreated
 Suffix: .jpg
 ```
-5. Once you had created the trigger, move to function code tab.
+6. Once you had created the trigger, move to function code tab.
    - Click to action.
    - Upload ZIP file.
 
