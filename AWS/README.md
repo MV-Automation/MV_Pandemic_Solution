@@ -43,8 +43,7 @@ Suffix: .jpg
 ```
 6. Once you had created the trigger, move to function code tab.
    - Click to action.
-   - Upload ZIP file.
-
+   - Upload ZIP file. (See Migration instructtion [Here](https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/AWS/Lambda_Migration.md))
 
 
 
