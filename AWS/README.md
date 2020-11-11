@@ -20,9 +20,8 @@ acces_key = 5423t432ewsACFASF$32rR#Cwcxasf12...
 2. Create a Bucket that will store client image. 
 ```
 Bucket Name : meraki-vision-bucket-for-clients
-
 ```
-	1. In our deployment we use this name but you should replace it with the name of the new bucket you will create.
+> In our deployment we use this name but you should replace it with the name of the new bucket you will create.
 
 ###### Lambda 
 
