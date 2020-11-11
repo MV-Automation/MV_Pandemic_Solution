@@ -1,6 +1,5 @@
 # AWS Architecture
-## This is an <h2> tag
-###### Description
+## Description
 
 In this module we deploy the amazon web services [AWS](https://aws.amazon.com) architecture. This cloud services use machine learning to extract text and do facial recognition.
 
@@ -22,7 +21,7 @@ acces_key = 5423t432ewsACFASF$32rR#Cwcxasf12
 Bucket Name : meraki-vision-bucket-for-clients
 
 ```
-	1. > In our deployment we use this name but you should replace it with the name of the new bucket you will create.
+	1. In our deployment we use this name but you should replace it with the name of the new bucket you will create.
 
 ###### Lambda 
 
