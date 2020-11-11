@@ -8,8 +8,9 @@ In this module we deploy the amazon web services [AWS](https://aws.amazon.com) a
 1. Create an Amazon Web Service Account.
 2. Obtain aws secret and access key.
 ```
-secret_key = 123adsfsaXDAFFEF#r4
-acces_key = 5423t432ewsACFASF$32rR#Cwcxasf12
+Example:
+secret_key = 123adsfsaXDAFFEF#r4...
+acces_key = 5423t432ewsACFASF$32rR#Cwcxasf12...
 
 ```
 
