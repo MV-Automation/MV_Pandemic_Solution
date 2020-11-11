@@ -64,9 +64,12 @@ aws_secret = "ASDASJDNQWUW2738TWDUNJAKWDN2EWQ..."
 ###### Uploading Code (ZIP File)
 
 After doing upper steps, please move AmazonKeys.py and lambda_function.py to uploat_to_lamda folder. Then, create a ZIP file with all the folder.
-	- upload_to_lambda/
-		- *AmazonKey.py*
-		- *lambda_function.py*
-		- ...
 
-Furthemore, upload the ZIP file generated to previous lambda function created in Amazon Web Service.
+```
+_upload_to_lambda/_
+		_AmazonKeys.py_
+		_lambda_function.py_
+		_..._
+```
+	
+Furthermore, upload the ZIP file generated to previous lambda function created in Amazon Web Service.
