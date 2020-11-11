@@ -1,0 +1,1 @@
+#Format for the AmazonKeys file needed for the applications to run. AWS keys go here.
