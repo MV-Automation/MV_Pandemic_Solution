@@ -6,10 +6,6 @@ Lambda Service has a collection of native libraries to use with Python but in ou
 
 ###### Update AWS Keys
 1. Locate the following files in this repository:
-	- AmazonKey.py
-	- lambda_function.py 
-	- upload_to_lambda/
-		- ...
 
 ```
  -AmazonKeys.py
