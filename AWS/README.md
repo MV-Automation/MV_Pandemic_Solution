@@ -46,10 +46,10 @@ Suffix: .jpg
 
 ## Webex Teams Bot
 To create a Bot please follow the next steps:
-1. Open the following tutorial [Cisco Devnet](https://developer.webex.com/docs/bots))
+1. Open the following tutorial [Cisco Devnet](https://developer.webex.com/docs/bots)
 2. Create a Bot
 3. Generate Token and keep it. (*It's a unique token, take care of it*)
-4. Continue migration [Here](https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/AWS/Lambda_Migration.md))
+4. Continue migration [Here](https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/AWS/Lambda_Migration.md)
 
 
 ## Simple Queue Service (SQS)

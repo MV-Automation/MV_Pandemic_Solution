@@ -56,7 +56,7 @@ aws_secret = "ASDASJDNQWUW2738TWDUNJAKWDN2EWQ..."
 
 ``` python
 84 access_denied = []
-86 queue_url = ""
+86 queue_url = "https://sqs.us-east-2.amazonaws.com/123456789/your_new_queue"
 87 
 ```
 
