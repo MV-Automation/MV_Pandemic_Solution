@@ -9,11 +9,10 @@ In this module we deploy the Amazon Web Services [AWS](https://aws.amazon.com) a
 2. Obtain aws secret and access key.
 ```
 Example:
-secret_key = 123adsfsaXDAFFEF#r4...
-acces_key = 5423t432ewsACFASF$32rR#Cwcxasf12...
+Secret Key: 123adsfsaXDAFFEF#r4...
+Access Key: 5423t432ewsACFASF$32rR#Cwcxasf12...
 
 ```
-3. Replace you AWS keys in the file AmazonKeys.py and save.
 
 ###### S3 Bucket
 
@@ -45,6 +44,27 @@ Suffix: .jpg
    - Upload ZIP file. (See Migration instruction [Here](https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/AWS/Lambda_Migration.md))
 
 
+## Webex Teams Bot
+To create a Bot please follow the next steps:
+1. Open the following tutorial [Cisco Devnet](https://developer.webex.com/docs/bots))
+2. Create a Bot
+3. Generate Token and keep it. (*It's a unique token, take care of it*)
+4. Continue migration [Here](https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/AWS/Lambda_Migration.md))
+
+
+## Simple Queue Service (SQS)
+1. Navigate through SQS Service tab
+2. Create a new STANDARD queue
+3. Use the following configuration:
+	- Visibility Timeout: 30 Seconds
+	- Message retention period: 1 Minute
+	- Maximum message size: 256 Kb
+	- Delivery delay: 0
+	- Receive message wait time: 0
+
+4. Use Basic Access Policy
+5. Collect the url generated for sqs and save it.
+
 
 ## Architecture
 
@@ -52,3 +72,5 @@ This module is executed by self when receives images from a Raspberry Pi Client 
 
 ![Image of Architecture](
 https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/Cloud_Architecture.png)
+
+
