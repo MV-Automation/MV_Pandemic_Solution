@@ -49,3 +49,4 @@ pip3 install response
 ```
 python3 interface.py
 ```
+3. The application will start and will show the instructions on how to use it.
