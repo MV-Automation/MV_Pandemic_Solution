@@ -82,7 +82,7 @@ python manage.py collectstatic
 ``` bash
 python manage.py runserver 0.0.0.0:8000
 ```
-
+6. 
 
 ###### Deploy in Apache Server
 
