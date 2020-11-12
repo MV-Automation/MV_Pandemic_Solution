@@ -51,6 +51,21 @@ To create a Bot please follow the next steps:
 3. Generate Token and keep it. (*It's a unique token, take care of it*)
 4. Continue migration [Here](https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/AWS/Lambda_Migration.md)
 
+###### Dyanamo DB
+Create a Non Relational DataBase using AWS Services.
+1. Open Dynamo DB tab in AWS Console.
+2. Create a new Table.
+3. Please, name your new Table as follows:
+```
+Table Name: Faces_Match
+```
+4. Configure an primary key for table
+```
+Primary Key: Time
+Type: String
+```
+5. Click on create Table. 
+
 
 ## Simple Queue Service (SQS)
 1. Navigate through SQS Service tab

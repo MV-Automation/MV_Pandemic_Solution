@@ -121,9 +121,9 @@ sudo vi /etc/apache2/sites-available/000-default.conf
 	</Files>
 </Directory>
 
-WSGIDaemonProcess Web_App python-path=/home/ubuntu/django/Web_App/Meraki_Project/mysite python-home=/home/ubuntu/django/MV_Project
-WSGIProcessGroup Web_App
-WSGIScriptAlias / /home/ubuntu/django/Web_App/Meraki_Project/mysite/mysite/wsgi.py
+	WSGIDaemonProcess Web_App python-path=/home/ubuntu/django/Web_App/Meraki_Project/mysite python-home=/home/ubuntu/django/MV_Project
+	WSGIProcessGroup Web_App
+	WSGIScriptAlias / /home/ubuntu/django/Web_App/Meraki_Project/mysite/mysite/wsgi.py
 </VirtualHost>
 ```
 3. Move to the project folder
