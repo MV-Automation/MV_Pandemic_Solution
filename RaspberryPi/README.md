@@ -33,12 +33,22 @@ pip3 install getmac
 pip3 install pytz
 pip3 install response
 ```
+<br/>
+
 ##### Cloning the repository
 1. Clone the git repository into the Raspberry Pi. Copy it into the directory where you want it to stay.
 
 <br/>
 
 ##### Create the AmazonKeys.py and config.py files
-1. The interface needs to files in order to work: AmazonKeys.py and config.py. AmazonKeys.py contains the AWS access and secret keys in order to upload the images to the cloud and config.py contains the URL for the MV camera's RTSP stream and the file path for a promotional image to be showed while the users wait for the results.
+1. The interface needs to files in order to work: AmazonKeys.py and config.py. AmazonKeys.py contains the AWS access and secret keys in order to upload the images to the cloud and config.py contains the URL for the MV camera's RTSP stream and the file path for a promotional image to be showed while the users wait for the results. The repo comes with example files with the structure for both of them. Create new files with these names and copy this structure, replacing the values with the correct ones.
 
 <br/>
+
+## How to Run
+
+1. Use the terminal to navigate to the directory containing the interface.py file.
+2. Run the application by using the following command:
+```
+python3 interface.py
+```
