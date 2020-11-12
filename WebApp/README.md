@@ -46,7 +46,13 @@ cd django
 virtualenv mv_env
 git clone "https://github.com/MV-Automation/MV_Pandemic_Solution/" 
 ```
-4. Activate the virtual enviroment:
+4. Add your AmazonKeys.py to the following path:
+
+``` bash
+MV_Pandemic_Solution/WebApp/Meraki_Project/mysite/my_app/AmazonKeys.py
+```
+
+5. Activate the virtual enviroment:
 ``` bash
 source mv_env/bin/activate
 ```
