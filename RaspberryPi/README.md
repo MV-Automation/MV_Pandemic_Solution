@@ -6,3 +6,19 @@ sudo apt full-upgrade --fix-missing
 sudo reboot
 ```
 <br/>
+
+```
+sudo apt-get install libatlas-base-dev
+sudo apt-get install python3-tk 
+```
+<br/>
+
+```
+pip3 install opencv-python
+pip3 install Pillow
+pip3 install boto3
+pip3 install getmac
+pip3 install pytz
+pip3 install response
+
+```
