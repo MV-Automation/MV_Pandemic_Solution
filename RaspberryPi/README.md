@@ -37,6 +37,18 @@ pip3 install response
 ##### Cloning the repository
 1. Clone the git repository into the Raspberry Pi. Copy it into the directory where you want it to stay.
 
+##### Adjust the MV camera's zoom and activate the RTSP stream.
+1. Navigate into the Meraki Dashboard and find the camera you are going to use.
+2. Go to the Settings tab and adjust the Optical Zoom as shown in the picture.
+
+![Image of Optical Zoom setting](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/focus_set.png)
+
+3. Enable the RTSP stream and take note of the URL given, you'll need it later.
+
+![Image ofRTSP setting](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/rtsp_set.png)
+
 ##### Create the AmazonKeys.py and config.py files
 1. The interface needs to files in order to work: AmazonKeys.py and config.py. AmazonKeys.py contains the AWS access and secret keys in order to upload the images to the cloud and config.py contains the URL for the MV camera's RTSP stream and the file path for a promotional image to be showed while the users wait for the results. The repo comes with example files with the structure for both of them. Create new files with these names and copy this structure, replacing the values with the correct ones.
 
