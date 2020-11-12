@@ -62,7 +62,7 @@ sudo vi Meraki_Project/mysite/mysite/settings.py
 ```
 2. Replace the allowed host with your EC2 instance name.
 ``` bash
-ALLOWED_HOSTS = ['Your_EC2_DNS_NAME']
+ALLOWED_HOSTS = ['YOUR_EC2_DNS_NAME']
 ```
 3. Install the project requirements.
 ``` bash
@@ -82,10 +82,61 @@ python manage.py collectstatic
 ``` bash
 python manage.py runserver 0.0.0.0:8000
 ```
-6. 
+
+> Please verify versions of library used in this project before install. 
 
 ###### Deploy in Apache Server
 
+After you had installed django and deployed in EC2 instance its time to mount as a linux process to run in background. 
 
 
-> Please verify versions of library used in this project before install. 
+1. Open the *000-default.conf* file in your EC2 instance. 
+``` bash
+sudo vi /etc/apache2/sites-available/000-default.conf
+```
+
+2. Replace the file configuration as follows:
+
+``` bash
+<VirtualHost *:80>
+
+	ServerAdmin webmaster@example.com
+	DocumentRoot /home/ubuntu/django/Web_App/Meraki_Project/mysite
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+	Alias /static /home/ubuntu/django/Web_App/Meraki_Project/mysite/static
+<Directory /home/ubuntu/django/Web_App/Meraki_Project/mysite/static>
+	Require all granted
+</Directory>
+
+<Directory /home/ubuntu/django/Web_App/Meraki_Project/mysite/mysite>
+	<Files wsgi.py>
+		Require all granted
+	</Files>
+</Directory>
+
+WSGIDaemonProcess Web_App python-path=/home/ubuntu/django/Web_App/Meraki_Project/mysite python-home=/home/ubuntu/django/MV_Project
+WSGIProcessGroup Web_App
+WSGIScriptAlias / /home/ubuntu/django/Web_App/Meraki_Project/mysite/mysite/wsgi.py
+</VirtualHost>
+```
+3. Move to the project folder
+``` bash
+cd /home/ubuntu/django/Meraki_Project/mysite/mysite
+```
+4. Give required permisson to some files with the following commands:
+
+``` bash
+chmod 664 db.sqlite3
+sudo chown :www-data db.sqlite3
+sudo chown :www-data ~/django/Meraki_Project/mysite/mysite
+```
+5. Finally, restart apach2 server with this command.
+
+``` bash
+sudo service apache2 restart
+```
+###### Congrats! You're ready to use Meraki Vision Solution, Enjoy!
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_app.png)
