@@ -143,7 +143,7 @@ sudo chown :www-data ~/django/Meraki_Project/mysite/mysite
 sudo service apache2 restart
 ```
 
-###### Create Web App Users and Admin (Super User)
+###### Create Web Admin (Super User)
 Inside EC2 instance, navigate to the project folder and create a super user with all privileges. 
 
 ``` bash
@@ -158,8 +158,16 @@ Email address: example@mail.com
 Password: admin_password
 Password admin_password
 ```
-
 > This super user will create any other users that will have acces to web application. 
+
+###### Create Web App Users
+Now that you have created a super user, login into the Web App and using de GUI click on add user.
+
+This will open a new form and just need to fill with non superusers data.
+
+![Image of Create Users](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/user_add.png)
+
 
 ###### Congrats! You're ready to use Meraki Vision Solution, Enjoy!
 
