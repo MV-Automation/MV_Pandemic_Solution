@@ -159,6 +159,7 @@ Password: admin_password
 Password admin_password
 ```
 
+> This super user will create any other users that will have acces to web application. 
 
 ###### Congrats! You're ready to use Meraki Vision Solution, Enjoy!
 
