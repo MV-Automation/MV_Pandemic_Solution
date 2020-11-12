@@ -37,7 +37,7 @@ pip3 install response
 ##### Cloning the repository
 1. Clone the git repository into the Raspberry Pi. Copy it into the directory where you want it to stay.
 
-##### Adjust the MV camera's zoom and activate the RTSP stream.
+##### Adjust the MV camera's zoom and focus and enable the RTSP stream.
 1. Navigate into the Meraki Dashboard and find the camera you are going to use.
 2. Go to the Settings tab and adjust the Optical Zoom and Focus settings as shown in the picture.
 
