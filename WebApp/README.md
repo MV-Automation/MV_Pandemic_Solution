@@ -37,7 +37,7 @@ sudo pip3 install virtualenv
 ```
 2. Create a new folder called django as follows:
 ``` bash
-mdkir django
+mkdir django
 cd django
 ```
 
