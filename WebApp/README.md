@@ -8,16 +8,67 @@ For this Web App deployment you will need to use your Amazon Web Services Accoun
 ###### Virtual Machine in AWS (EC2)
 1. Open your AWS Console [AWS](https://aws.amazon.com) and choose EC2 Service. 
 2. Launch a new instance and select the following *free tier* version:
+
+	
+``` bash
+IMPORTANT: If you can't create an instance in your actual region (example: Ohio us-east-2), try to create an EC2 instance in another region of Amazon Web Services (example: Oregon us-west-2) 
+```
+
+2.1 Choose the following image and select the default values as follows.
+
 ``` bash
 Ubuntu Server 20.04 LTS (HVM), SSD Volume Type - ami-0a91cd140a1fc148a (64-bit x86) / ami-0742a572c2ce45ebf (64-bit Arm)
 ```
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_01.png)
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_02.png)
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_03.png)
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_04.png)
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_05.png)
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_06.png)
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_07.png)
+
+
 3. Downloadd and safetly save the '.PEM' file that will create SSH conecction to this new instance.
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_08.png)
 
 > You could add a security group to allow access from specific IP addreses only.
 
-4. Create a connection with a terminal emulator (ie. Putty, Secure CRT) using the downloaded key-pair (.PEM)
+4. Verify that your instance has been launched and is online.
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_09.png)
+
+5. Create a connection with a terminal emulator (ie. Putty, Secure CRT) using the downloaded key-pair (.PEM)
+
+5.1 Click on you instance ID and this will show you the Instance Summary, then click on the Connect button.
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_010.png)
+
+5.2 Finally, move into SSH client tab and find the command to connect into the EC2 instance. 
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_011.png)
+
 
 ``` bash
+Example: 
 ssh -i "key_pair_name.pem" ubuntu@ec2-XX-XX-XX-XX.us-west-2.compute.amazonaws.com
 ```
 
