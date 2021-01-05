@@ -117,9 +117,10 @@ source mv_env/bin/activate
 ###### Deploy in EC2
 1. Once you had cloned the project repository, navigate to project folder and open settings.py
 ``` bash
-cd Meraki_Project/mysite/mysite
 
-sudo vi Meraki_Project/mysite/mysite/settings.py
+cd MV_P-Extention/Meraki_Project-Extension/mysite/mysite
+
+sudo vi MV_P-Extention/Meraki_Project-Extension/mysite/mysite/settings.py
 ```
 2. Replace the allowed host with your EC2 instance name.
 ``` bash
@@ -143,6 +144,10 @@ python manage.py collectstatic
 ``` bash
 python manage.py runserver 0.0.0.0:8000
 ```
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_012.PNG)
+
 
 > Please verify versions of library used in this project before install. 
 
