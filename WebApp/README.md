@@ -66,11 +66,15 @@ https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_010.PNG)
 ![Image of Web App](
 https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_011.PNG)
 
+5.3 Use Windows CMD or your prefered terminal emulator to connect to the instance. 
+
+Make sure that the PEM file is in the same folder from wich you try to make the conection with SSH client. 
 
 ``` bash
 Example: 
 ssh -i "key_pair_name.pem" ubuntu@ec2-XX-XX-XX-XX.us-west-2.compute.amazonaws.com
 ```
+
 
 
 ###### Install Python
