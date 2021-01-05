@@ -144,9 +144,14 @@ python manage.py collectstatic
 ``` bash
 python manage.py runserver 0.0.0.0:8000
 ```
+## Add the following inbound rule for the security group that use the instance in Amazon Web Services for port TCP 80 and TCP 8000.
 
 ![Image of Web App](
 https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_012.PNG)
+
+![Image of Web App](
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_013.PNG)
+
 
 
 > Please verify versions of library used in this project before install. 
@@ -155,6 +160,11 @@ https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_012.PNG)
 
 After you had installed django and deployed in EC2 instance its time to mount as a linux process to run in background. 
 
+First, desactivate the virtual enviroment and return to root folder with this command. 
+``` bash
+desactivate
+cd ~
+```
 
 1. Open the *000-default.conf* file in your EC2 instance. 
 ``` bash
@@ -166,36 +176,36 @@ sudo vi /etc/apache2/sites-available/000-default.conf
 ``` bash
 <VirtualHost *:80>
 
-	ServerAdmin webmaster@example.com
-	DocumentRoot /home/ubuntu/django/Web_App/Meraki_Project/mysite
-	ErrorLog ${APACHE_LOG_DIR}/error.log
-	CustomLog ${APACHE_LOG_DIR}/access.log combined
-	Alias /static /home/ubuntu/django/Web_App/Meraki_Project/mysite/static
-<Directory /home/ubuntu/django/Web_App/Meraki_Project/mysite/static>
-	Require all granted
+ServerAdmin webmaster@example.com
+DocumentRoot /home/ubuntu/django/MV_P-Extention/Meraki_Project-Extension/mysite
+ErrorLog ${APACHE_LOG_DIR}/error.log
+CustomLog ${APACHE_LOG_DIR}/access.log combined
+Alias /static /home/ubuntu/django/MV_P-Extention/Meraki_Project-Extension/mysite/static
+<Directory /home/ubuntu/django/MV_P-Extention/Meraki_Project-Extension/mysite/static>
+Require all granted
 </Directory>
 
-<Directory /home/ubuntu/django/Web_App/Meraki_Project/mysite/mysite>
-	<Files wsgi.py>
-		Require all granted
-	</Files>
+<Directory /home/ubuntu/django/MV_P-Extention/Meraki_Project-Extension/mysite/mysite>
+<Files wsgi.py>
+Require all granted
+</Files>
 </Directory>
 
-	WSGIDaemonProcess Web_App python-path=/home/ubuntu/django/Web_App/Meraki_Project/mysite python-home=/home/ubuntu/django/MV_Project
-	WSGIProcessGroup Web_App
-	WSGIScriptAlias / /home/ubuntu/django/Web_App/Meraki_Project/mysite/mysite/wsgi.py
+WSGIDaemonProcess MV_P-Extention python-path=/home/ubuntu/django/MV_P-Extention/Meraki_Project-Extension/mysite python-home=/home/ubuntu/django/mv_env
+WSGIProcessGroup MV_P-Extention
+WSGIScriptAlias / /home/ubuntu/django/MV_P-Extention/Meraki_Project-Extension/mysite/mysite/wsgi.py
 </VirtualHost>
 ```
 3. Move to the project folder
 ``` bash
-cd /home/ubuntu/django/Meraki_Project/mysite/mysite
+cd /home/ubuntu/django/MV_P-Extention/Meraki_Project-Extension/mysite
 ```
 4. Give required permisson to some files with the following commands:
 
 ``` bash
 chmod 664 db.sqlite3
 sudo chown :www-data db.sqlite3
-sudo chown :www-data ~/django/Meraki_Project/mysite/mysite
+sudo chown :www-data ~/django/MV_P-Extention/Meraki_Project-Extension/mysite
 ```
 5. Finally, restart apach2 server with this command.
 
@@ -207,7 +217,8 @@ sudo service apache2 restart
 Inside EC2 instance, navigate to the project folder and create a super user with all privileges. 
 
 ``` bash
-cd ~/django/Web_App/Meraki_Project/mysite
+cd ~/django/MV_P-Extention/Meraki_Project-Extension/mysite
+
 python manage.py createsuperuser 
 ```
 Then, fill the form with your respective data:
