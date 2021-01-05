@@ -21,50 +21,50 @@ Ubuntu Server 20.04 LTS (HVM), SSD Volume Type - ami-0a91cd140a1fc148a (64-bit x
 ```
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_01.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_01.PNG)
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_02.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_02.PNG)
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_03.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_03.PNG)
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_04.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_04.PNG)
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_05.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_05.PNG)
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_06.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_06.PNG)
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_07.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_07.PNG)
 
 
 3. Downloadd and safetly save the '.PEM' file that will create SSH conecction to this new instance.
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_08.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_08.PNG)
 
 > You could add a security group to allow access from specific IP addreses only.
 
 4. Verify that your instance has been launched and is online.
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_09.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_09.PNG)
 
 5. Create a connection with a terminal emulator (ie. Putty, Secure CRT) using the downloaded key-pair (.PEM)
 
 5.1 Click on you instance ID and this will show you the Instance Summary, then click on the Connect button.
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_010.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_010.PNG)
 
 5.2 Finally, move into SSH client tab and find the command to connect into the EC2 instance. 
 
 ![Image of Web App](
-https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_011.png)
+https://github.com/MV-Automation/MV_Pandemic_Solution/blob/main/img/web_011.PNG)
 
 
 ``` bash
