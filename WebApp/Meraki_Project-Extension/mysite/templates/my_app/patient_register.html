@@ -1,0 +1,19 @@
+{% extends 'my_app/base.html' %}
+{% block body_block %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/doctors.css' %}"/>
+<!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<h3>Llene el siguiente formulario para agendar una cita:</h3>
+<div class="doctors">
+  <form method="POST">
+    {{form_patient}}
+    {% csrf_token %}
+    <input class="btn btn-primary btn-block btn-large" type="submit" value="Submit">
+  </form>
+</div>
+
+{% endblock %}

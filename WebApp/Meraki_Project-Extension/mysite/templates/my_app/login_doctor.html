@@ -1,0 +1,32 @@
+{% extends 'my_app/base.html' %}
+{% block body_block %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style_login.css' %}"/>
+
+<div class="container">
+
+   <div class="login">
+      <h1>Iniciar Sesión</h1>
+       <form action="{% url 'my_app:doctor_login' %}" method="post">
+         {% csrf_token %}
+         <label for="username">Usuario: </label>
+         <input type="text" name="username" placeholder="Nombre de usuario" required="required" />
+
+         <label for="password">Contraseña: </label>
+         <input type="password" name="password" placeholder="Contraseña" required="required" />
+
+         <button type="submit" class="btn btn-primary btn-block btn-large">Ingresar</button>
+
+       </form>
+   </div>
+
+</div>
+
+<div class="w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-bottomleft w3-padding-large">
+    Desarrollado por CXA Interns
+  </div>
+</div>
+
+{% endblock %}
